@@ -1,0 +1,25 @@
+<div th:fragment="view-posts" id="view-posts" >
+  <button onclick="showCreateForm()">Create New Post</button>
+  <button onclick="showCreateAuthorForm()">Create Author</button>
+  <div id="post-list" class="post-list"></div>
+</div>
+
+<div th:fragment="view-post-detail" style="display:none;" id="view-post-detail">
+  <button onclick="showPostList()" class="back-button">← Back to List</button>
+
+  <div class="post-detail-box">
+    <h2 id="detail-title"></h2>
+    <p id="detail-content"></p>
+  </div>
+
+  <div class="comment-section">
+    <h3>Comments</h3>
+    <ul id="comment-list" class="comment-list"></ul>
+
+    <h4>Add a Comment</h4>
+    <form id="comment-form" class="comment-form">
+      <textarea name="text" rows="3" placeholder="Your comment..." required></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>

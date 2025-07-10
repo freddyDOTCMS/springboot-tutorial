@@ -1,0 +1,26 @@
+
+.author-form input {
+    width: 50%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.author-form button {
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.author-form button:hover {
+    background-color: #5936a4;
+}
